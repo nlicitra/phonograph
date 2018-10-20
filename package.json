@@ -39,7 +39,7 @@
     "build-declarations": "tsc -d",
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "preinstall": "npm run build && npm run build-declarations",
+    "preinstall": "npm install . && npm run build && npm run build-declarations",
     "prepublish": "npm run build && npm run build-declarations",
     "test": "serve . & open http://localhost:5000/demo.html",
     "pretest": "npm run build"
