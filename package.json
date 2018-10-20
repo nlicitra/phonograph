@@ -39,7 +39,7 @@
     "build-declarations": "tsc -d",
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "prepublish": "npm run build && npm run build-declarations",
+    "prepublish": "yarn && npm run build && npm run build-declarations",
     "test": "serve . & open http://localhost:5000/demo.html",
     "pretest": "npm run build"
   }
